@@ -15,13 +15,56 @@
     <body>
         <div id="sectionHome">
             <div class="background-container d-flex flex-column justify-content-end">
-                <div class="fashion-card">
-                    <h1> India Tourism</h1>
-                    <p>
-                        plan your trip. wherever you want to go
-                    </p>
-                    <button class="btn btn-primary" onclick="display('sectionFavouriteplaces')">Get started</button>
-                </div>
+              <div class="register">
+                <h1>Register Form</h1>
+                <form id="register" method = "post" action="#sectionFavouriteplaces">
+                  <label>Enter Your Name</label>
+                  <br>
+                  <input type="text" name="lname" id="name" placeholder="Enter Your Name">
+                  <br><br>
+                  <label>Mobile</label>
+                  <br>
+                  <input type="number" name="mobile" id="name" placeholder="Enter Your Moblie Number">
+                  <br><br>
+                  <label>Email</label>
+                  <br>
+                  <input type="email" name="email" id="name" placeholder="Enter Your Mail">
+                  <br><br>
+                  <label>Gender</label>
+                  &nbsp;&nbsp;&nbsp;
+                  <input type="radio" name="gender" id="male">
+                  &nbsp;
+                  <span id="male">Male</span>
+                  &nbsp;&nbsp;&nbsp;
+                  <input type="radio" name="gender" id="female">
+                  &nbsp;
+                  <span id="male">Female</span>
+                  <br><br>
+                  <label>Known Language</label>
+                  <br>
+                  &nbsp;&nbsp;&nbsp;
+                  <input type="checkbox" name="lang" id="telugu">
+                  &nbsp;
+                  <span id="telugu">Telugu</span>
+                  &nbsp;&nbsp;&nbsp;
+                  <input type="checkbox" name="lang" id="hindhi">
+                  &nbsp;
+                  <span id="hindhi">Hindhi</span>
+                  &nbsp;&nbsp;&nbsp;
+                  <input type="checkbox" name="lang" id="english">
+                  &nbsp;
+                  <span id="english">English</span>
+                  <br><br>
+                  <input type="submit" name="submit" id="submit" value="Submit">
+                </form>
+              </div>
+              <div class="fashion-card">
+                  <h1> India Tourism</h1>
+                  <p>
+                    plan your trip. wherever you want to go
+                  </p>
+                  <button class="btn btn-primary mb-2" onclick="display('sectionFavouriteplaces')" >Get started</button>
+              </div>
             </div>   
         </div>
         <div id="sectionFavouriteplaces">
