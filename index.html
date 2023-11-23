@@ -17,53 +17,52 @@
         <div class="background-container d-flex flex-column justify-content-end">
           <div class="register">
                 <h1>Register Form</h1>
-                <form id="register" method = "post"  onsubmit="submitForm(event)">
-                  <label>Enter Your Name</label>
-                  <br>
-                  <input type="text" name="lname" id="name" placeholder="Enter Your Name">
-                  <br><br>
-                  <label>Mobile</label>
-                  <br>
-                  <input type="number" name="mobile" id="name" placeholder="Enter Your Moblie Number">
-                  <br><br>
-                  <label>Email</label>
-                  <br>
-                  <input type="email" name="email" id="name" placeholder="Enter Your Mail">
-                  <br><br>
-                  <label>Gender</label>
+                <form id="register" method="post" onsubmit="submitForm(event)">
+                  <label>Enter Your Name</label><br>
+                  <input type="text" name="lname" id="name" placeholder="Enter Your Name"><br><br>
+              
+                  <label>Mobile</label><br>
+                  <input type="number" name="mobile" id="mobile" placeholder="Enter Your Mobile Number"><br><br>
+              
+                  <label>Email</label><br>
+                  <input type="email" name="email" id="email" placeholder="Enter Your Mail"><br><br>
+              
+                  <label>Gender</label>&nbsp;&nbsp;&nbsp;
+                  <input type="radio" name="gender" id="male">&nbsp;
+                  <span>Male</span>&nbsp;&nbsp;&nbsp;
+                  <input type="radio" name="gender" id="female">&nbsp;
+                  <span>Female</span><br><br>
+              
+                  <label>Known Language</label><br>
                   &nbsp;&nbsp;&nbsp;
-                  <input type="radio" name="gender" id="male">
-                  &nbsp;
-                  <span id="male">Male</span>
-                  &nbsp;&nbsp;&nbsp;
-                  <input type="radio" name="gender" id="female">
-                  &nbsp;
-                  <span id="male">Female</span>
-                  <br><br>
-                  <label>Known Language</label>
-                  <br>
-                  &nbsp;&nbsp;&nbsp;
-                  <input type="checkbox" name="lang" id="telugu">
-                  &nbsp;
-                  <span id="telugu">Telugu</span>
-                  &nbsp;&nbsp;&nbsp;
-                  <input type="checkbox" name="lang" id="hindhi">
-                  &nbsp;
-                  <span id="hindhi">Hindhi</span>
-                  &nbsp;&nbsp;&nbsp;
-                  <input type="checkbox" name="lang" id="english">
-                  &nbsp;
-                  <span id="english">English</span>
-                  <br><br>
+                  <input type="checkbox" name="lang" id="telugu">&nbsp;
+                  <span>Telugu</span>&nbsp;&nbsp;&nbsp;
+                  <input type="checkbox" name="lang" id="hindhi">&nbsp;
+                  <span>Hindi</span>&nbsp;&nbsp;&nbsp;
+                  <input type="checkbox" name="lang" id="english">&nbsp;
+                  <span>English</span><br><br>
+              
                   <input type="submit" name="submit" id="submit" value="Submit">
                 </form>
                 <script>
-                  function submitForm(event) {
-                    event.preventDefault(); // Prevent the default form submission
-              
-                    alert("Your Application Has Been Submitted");
-                  }
-                </script>    
+                    function submitForm(event) {
+                        event.preventDefault(); // Prevent the default form submission
+                
+                        // Validate form fields
+                        var name = document.getElementById('name').value;
+                        var mobile = document.getElementById('mobile').value;
+                        var email = document.getElementById('email').value;
+                
+                        if (name === "" || mobile === "" || email === "") {
+                            alert("Please fill out all required fields.");
+                        } else {
+                            alert("Your Application Has Been Submitted");
+                            // You can also submit the form here if needed
+                            // document.getElementById('register').submit();
+                        }
+                    }
+                </script>
+                 
           </div>
           <div class="fashion-card">
                   <h1> India Tourism</h1>
@@ -77,7 +76,7 @@
       <div id="sectionFavouriteplaces">
         <div class="favouriteplacebg-container">
           <div class="header-container">
-                    <h1 class="main-heading">Favourite places</h1>
+                    <h1 class="head-box">WELL COME TO INDIA</h1>
                     <div class="nav-container">
                         <ul>
                             <li><a href="#sectionHome" onclick="display('sectionHome')">Home</a></li>
@@ -87,7 +86,7 @@
                                     <li><a href="#sectionTajmahaldetailedview"  onclick="display('sectionTajmahaldetailedview')">Tajmahal</a></li>
                                     <li><a href="#sectionKeraladetailedview" onclick="display('sectionKeraladetailedview')">Kerala</a></li>
                                     <li><a href="#sectionKashmirDetailedView" onclick="display('sectionKashmirDetailedView')">Kashmir</a></li>
-                                    <li><a href="#sectionVaranasiDetailedview" onclick="display('sectionVaranasiDetailedview')">UP</a></li>
+                                    <li><a href="#sectionVaranasiDetailedview" onclick="display('sectionVaranasiDetailedview')">Uttarpradesh</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -143,7 +142,7 @@
       </div>
       <div id="sectionTajmahaldetailedview">
         <div class="detailedviewbg-container">
-          <h1 class="main-heading">Detailed View</h1>
+          <h1 class="main-heading">Well come To Agra</h1>
           <div class="card-container">
             <div id="carouselExampleIndicators" class="carousel slide">
               <div class="carousel-indicators">
@@ -234,7 +233,7 @@
       </div>
       <div id="sectionKeraladetailedview">
         <div class="detailedviewbg-container">
-          <h1 class="main-heading">Detailed View</h1>
+          <h1 class="main-heading">Well come to Kerala</h1>
           <div class="card-container">
             <div id="keralaViewCarousel" class="carousel slide">
                         <div class="carousel-indicators">
@@ -307,7 +306,7 @@
       </div>
       <div id="sectionKashmirDetailedView">
             <div class="detailedviewbg-container">
-                <h1 class="main-heading">Detailed View</h1>
+                <h1 class="main-heading">Wel Come to Kashmir </h1>
                 <div class="card-container">
                     <div id="kashmirViewcarousel" class="carousel slide">
                         <div class="carousel-indicators">
@@ -378,7 +377,7 @@
       </div>
       <div id="sectionVaranasiDetailedview">
             <div class="detailedviewbg-container">
-                <h1 class="main-heading">Detailed View</h1>
+                <h1 class="main-heading">Well come To Varanasi</h1>
                 <div class="card-container">
                     <div id="varanasiViewCarousel" class="carousel slide">
                         <div class="carousel-indicators">
