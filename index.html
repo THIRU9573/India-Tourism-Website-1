@@ -15,6 +15,84 @@
     <body>
       <div id="sectionHome">
         <div class="background-container d-flex flex-column justify-content-end">
+            <div class="register">
+                <h1>Register Form</h1>
+                <form id="register" method="post" onsubmit="submitForm(event)">
+                    <label>Enter Your Name</label><br>
+                    <input type="text" name="lname" id="name" placeholder="Enter Your Name"><br><br>
+            
+                    <label>Mobile</label><br>
+                    <input type="number" name="mobile" id="mobile" placeholder="Enter Your Mobile Number"><br><br>
+            
+                    <label>Email</label><br>
+                    <input type="email" name="email" id="email" placeholder="Enter Your Mail"><br><br>
+            
+                    <label>Gender</label>&nbsp;&nbsp;&nbsp;
+                    <input type="radio" name="gender" id="male">&nbsp;
+                    <span>Male</span>&nbsp;&nbsp;&nbsp;
+                    <input type="radio" name="gender" id="female">&nbsp;
+                    <span>Female</span><br><br>
+            
+                    <label>Known Language</label><br>
+                    &nbsp;&nbsp;&nbsp;
+                    <input type="checkbox" name="lang" id="telugu">&nbsp;
+                    <span>Telugu</span>&nbsp;&nbsp;&nbsp;
+                    <input type="checkbox" name="lang" id="hindhi">&nbsp;
+                    <span>Hindi</span>&nbsp;&nbsp;&nbsp;
+                    <input type="checkbox" name="lang" id="english">&nbsp;
+                    <span>English</span><br><br>
+            
+                    <input type="submit" name="submit" id="submit" value="Submit">
+                </form>
+            </div>
+            
+            <div class="popup" id="popup">
+                <i class="fa-thin fa-check"></i>
+                <h2>Thank you</h2>
+                <p>Your Details have been successfully submitted. Thanks!</p>
+                <button type="button" onclick="closePopup()">OK</button>
+            </div>
+            
+            <script>
+                function submitForm(event) {
+                    event.preventDefault(); // Prevent the default form submission
+            
+                    // Validate form fields
+                    var name = document.getElementById('name').value;
+                    var mobile = document.getElementById('mobile').value;
+                    var email = document.getElementById('email').value;
+            
+                    if (name === "" || mobile === "" || email === "") {
+                        alert("Please fill out all required fields.");
+                    } else {
+                        // Form is valid, show success popup
+                        openPopup();
+                    }
+                }
+            
+                function openPopup() {
+                    let popup = document.getElementById("popup");
+                    popup.classList.add("open-popup");
+                }
+            
+                function closePopup() {
+                    let popup = document.getElementById("popup");
+                    popup.classList.remove("open-popup");
+                }
+            </script>
+        </div>
+        <div class="fashion-card">
+          <h1> India Tourism</h1>
+          <p>
+            plan your trip. wherever you want to go
+          </p>
+          <button class="btn btn-primary mb-2" onclick="display('sectionFavouriteplaces')" >Get started</button>
+        </div>
+
+    </div>
+      <!--
+      <div id="sectionHome">
+        <div class="background-container d-flex flex-column justify-content-end">
           <div class="register">
                 <h1>Register Form</h1>
                 <form id="register" method="post" onsubmit="submitForm(event)">
@@ -73,6 +151,7 @@
           </div>
         </div>   
       </div>
+    -->
       <div id="sectionFavouriteplaces">
         <div class="favouriteplacebg-container">
           <div class="header-container">
