@@ -309,7 +309,7 @@ ul li:hover ul.dropdown {
 
 
 }
-.errorpopup i.fa-solid fa-circle-xmark{
+.errorpopup i.fa-solid.fa-circle-xmark{
     font-size: 70px;
     color: #e21203;
 }
