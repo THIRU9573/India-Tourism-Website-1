@@ -313,3 +313,24 @@ ul li:hover ul.dropdown {
     font-size: 70px;
     color: #e21203;
 }
+i.fa-solid.fa-location-dot{
+    font-size: 45px;
+    color: #bfff00;
+    padding-top: 15px;
+}
+#tajmahl-google-map-container {
+    margin-top: 20px;
+    text-align: center;
+}
+#kerala-google-map-container {
+    margin-top: 20px;
+    text-align: center;
+}
+#kashmir-google-map-container {
+    margin-top: 20px;
+    text-align: center;
+}
+#uttarpradesh-google-map-container {
+    margin-top: 20px;
+    text-align: center;
+}
