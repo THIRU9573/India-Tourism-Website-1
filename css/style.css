@@ -5,9 +5,10 @@
 }
 .fashion-card {
     text-align: center;
-    background-color: white;
+    background-color: #112C66;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
+    color: #fff;
 }
 
 .favouriteplacebg-container {
@@ -125,7 +126,7 @@ input#submit{
 .header-container {
     display: flex;
     align-items: center;
-    background-color: #22438c;
+    background-color: #043aac;
 }
 
 .main-heading {
@@ -318,7 +319,7 @@ i.fa-solid.fa-location-dot{
     color: #bfff00;
     padding-top: 15px;
 }
-#tajmahl-google-map-container {
+#tajmahal-google-map-container {
     margin-top: 20px;
     text-align: center;
 }

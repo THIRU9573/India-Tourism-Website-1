@@ -105,13 +105,12 @@
         <div class="fashion-card">
           <h1> India Tourism</h1>
           <p>
-            plan your trip. wherever you want to go
+            Embark on a journey to your next adventure – where every step unveils a story, and every destination paints a unique chapter in your travel tale
           </p>
           <button class="btn btn-primary mb-2" onclick="display('sectionFavouriteplaces')" >Get started</button>
         </div>
 
-    </div>
-     
+      </div>
       <div id="sectionFavouriteplaces">
         <div class="favouriteplacebg-container">
           <div class="header-container">
@@ -126,6 +125,7 @@
                                     <li><a href="#sectionKeraladetailedview" onclick="display('sectionKeraladetailedview')">Kerala</a></li>
                                     <li><a href="#sectionKashmirDetailedView" onclick="display('sectionKashmirDetailedView')">Kashmir</a></li>
                                     <li><a href="#sectionVaranasiDetailedview" onclick="display('sectionVaranasiDetailedview')">Uttarpradesh</a></li>
+                                    <span></span>
                                 </ul>
                             </li>
                         </ul>
@@ -216,7 +216,7 @@
             <div class="text-container">
                         <div class="d-flex flex-row">    
                           <h1 class="card-heading">Taj Mahal</h1>
-                          <i class="fa-solid fa-location-dot" id="tajmahl-map-icon"></i>
+                          <i class="fa-solid fa-location-dot" id="tajmahal-map-icon"></i>
                         </div>
                         <div id="tajmahal-google-map-container" style="display: none;">
                           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14197.599938399242!2d78.02368812831392!3d27.17516268207537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39747121d702ff6d%3A0xdd2ae4803f767dde!2sTaj%20Mahal!5e0!3m2!1sen!2sin!4v1700924732115!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -224,7 +224,7 @@
                   
                       <script>
                           $(document).ready(function () {
-                              $("#tajmahl-map-icon").click(function () {
+                              $("#tajmahal-map-icon").click(function () {
                                   $("#tajmahal-google-map-container").toggle();
                               });
                           });
