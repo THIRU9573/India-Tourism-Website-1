@@ -1,5 +1,6 @@
 # India-Tourism-Website-1
-Description:
+# Description:
+
 That's great! Including your use of Git in the project is an important addition. Here's an updated version of your resume entry:
 
 - Utilized HTML, CSS, Bootstrap, and JavaScript to create captivating multimedia content on each page, providing users with an immersive experience into India's cultural tapestry.
@@ -13,3 +14,6 @@ That's great! Including your use of Git in the project is an important addition.
 - Deployed the project on Microsoft Azure, leveraging storage accounts, app services, and static website hosting to ensure scalability and efficient content delivery.
 
 This project allowed for the practical application of front-end development skills, user experience design, version control with Git, and cloud deployment strategies. The successful deployment on Azure demonstrates proficiency in utilizing cloud services for web hosting and storage.
+
+# Desktop View:
+
